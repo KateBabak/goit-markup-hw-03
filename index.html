@@ -15,6 +15,7 @@
 <body>
     <!-- Header -->
     <header class="page-header">
+        <div class="container page-header-container">
         <nav class="page-navigation">
             <a class="logo link" href="./index.html"><span class="text-blue">Web</span>Studio</a>
             <ul class="main-menu list">
@@ -29,7 +30,7 @@
                 </li>
             </ul>
         </nav>
-        <ul class="contact-menu list">
+        <ul class="contact-menu list page-header-container">
             <li class="contact-menu-item">
                 <a class="contact-link menu-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -38,6 +39,7 @@
                 <a class="contact-link menu-link link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
     </header>
     
     <!-- Main -->
@@ -49,7 +51,7 @@
         </section>
     
         <!-- Our benefits -->
-        <section class="benefits">
+        <section class="benefits section">
             <h2 class="visually-hidden">Наші переваги</h2>
             <ul class="benefits-list list">
                 <li class="benefits-list-item">
@@ -76,9 +78,10 @@
         </section>
 
 <!-- About -->
-        <section class="about-section">
+        <section class="about-section section">
+            <div class="container">
             <h2 class="section-title">Чим ми займаємось</h2>
-            <ul class="about-list list" >
+            <ul class="about-list list flex-list" >
                 <li class="about-list-item">
                     <img src="./images/box1jpg.jpg" alt="фото роботи"
                 width="370"
@@ -90,56 +93,64 @@
                 <li class="about-list-item">
                  <img src="./images/img-2.jpg" alt="фото роботи" width="370"/>
                 </ul>
+            </div>
               </section>
 
               <!-- Employees -->
-              <section class="employees-section">
+              <section class="employees-section section">
+                  <div class="container">
                   <h2 class="section-title">Наша команда</h2>
-                  <ul class="employees-list list">
+                  <ul class="employees-list list flex-list">
                       <li class="about-employees-list-item">
                           <img src="./images/specialist1.jpg" alt="фото спеціаліста"
                           width="270"/>
+                          <div class="employees-card-content-wrapper">
                         <h3 class="employee-name"> Ігор Дем'яненко</h3>
                         <p class="employee-position" lang="en">Product Designer</p>
                     </li>
 
                     <li class="about-employees-list-item">
                         <img src="./images/specialist2.jpg" alt="фото спеціаліста" width="270"/>
+                        <div class="employees-card-content-wrapper">
                         <h3 class="employee-name">Ольга Репіна</h3>
                         <p class="employee-position" lang="en">Frontend Developer</p> 
-
+                        </div>
                         <li class="about-employees-list-item">
                             <img src="./images/specialist3.jpg" alt="фото спеціаліста" width="270"/>
+                            <div class="employees-card-content-wrapper">
                             <h3 class="employee-name">Микола Тарасов</h3>
                             <p class="employee-position" lang="en">Marketing</p>
-
+                            </div>
                             <li class="about-employees-list-item">
                                 <img src="./images/specialist4.jpg" alt="фото спеціаліста" width="270"/>
+                               <div class="employees-card-content-wrapper">
                                 <h3 class="employee-name">Михайло Єрмаков</h3>
-                                <p class="employee-position" lang="en">UI Designer</p>
+                    </div>            <p class="employee-position" lang="en">UI Designer</p>
                   </ul>
+                </div>
               </section>
             </main>
 <!-- Footer Contacts -->
 <footer class="footer-list list">
+    <div class="container">
     <a class="logo link footer-logo" href="/index.html"><span class="text-blue">Web</span>Studio</a>
     <address>
         <ul class="contact-link list">
-            <li class="adress list">
+            <li class="adress list footer-list-item">
                 <a class="maps link menu-link" href="https://goo.gl/maps/hhCW37L2dN7FxY7t6" target="_blank"
                     rel="noopener noreferrer"> м. Київ, пр-т Лесі
                     Українки,26 </a>
             </li>
-
-            <li class="address-link link">
+            <li class="address-link link footer-list-item">
                 <a class="adress-link link menu-link" href="mailto:info@example.com">info@example.com</a>
             </li>
 
-            <li class="phone list">
+            <li class="phone list footer-list-item">
                 <a class="adress-link link menu-link" href="tel:+380901111111">+38 099 111 11 11</a>
             </li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 </html>

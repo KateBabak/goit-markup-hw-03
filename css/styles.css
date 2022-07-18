@@ -16,6 +16,30 @@
             
         }
     
+        h1,
+        h2,
+        h3,
+        h4,
+         p {
+        margin-top: 0;
+        margin-bottom: 0;
+        }
+
+        ul, 
+        ol {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+
+        img {
+        display: block;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
     .list {
         list-style: none;
     }
@@ -32,6 +56,19 @@
             font-size: 14px;
             letter-spacing: 0.03em;
 
+        }
+
+        .section {
+            padding: 94px 0;
+
+        }
+
+        .container {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         address {
@@ -56,6 +93,29 @@
                 }
 
     /* HEADER */
+
+.page-header {
+    margin-bottom: 80px;
+}
+
+
+        .page-header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 32px 0 25px 30px;
+        }
+
+        .page-navigation {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-menu {
+            display: flex;
+        }
+
+
 .logo   {
 color: var(--logo-text-color-black);
 font-family: var(--logo-font);
@@ -63,6 +123,15 @@ font-family: var(--logo-font);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-right: 90px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.contact-menu-item:not(:last-child) {
+    margin-right: 50px;
 }
 
     .text-blue {
@@ -80,6 +149,8 @@ font-family: var(--logo-font);
 
         .contact-link {
         color: var(--secondary-text-color-theme-light); 
+        margin-left: auto;
+      
     }
 
         .menu-link:hover,
@@ -92,6 +163,9 @@ font-family: var(--logo-font);
 
         .hero-section {
         background-color: var(--background-color-dark);
+        padding-top:200px;
+        padding-bottom: 200px;
+        
             }
 
 
@@ -102,8 +176,11 @@ font-family: var(--logo-font);
                 font-size: 44px;
                 line-height: 1.36;
                 letter-spacing: 0.06em;
+                max-width: 696px;
+                margin: 0 auto;
                 text-transform: uppercase;
                 text-align: center;
+                margin-bottom: 20px;
         }
 
         .main-button {
@@ -113,30 +190,44 @@ font-family: var(--logo-font);
             border-radius: 4px;
             color: var(--primary-text-color-theme-dark);
             letter-spacing: 0.06em;
-            width: 200px;
-            height: 50px;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 1.87;
                 text-align: center;
-                letter-spacing: 0.06em;    
-            
+                letter-spacing: 0.06em; 
+                margin: 0 auto;
+                display: block;
+                padding: 10px 32px;
+
+                
         }
 
+        
         .main-button:hover, 
         .main-button:focus {
         background-color: var(--hover-background-color);
-        cursor: pointer;
+    
         }
 
         /* Benefits  */
 
+.benefits {
+    padding: 94px 0;
+    max-width:1200px; 
+    margin: 0 auto;
+}
+.benefits-list {
+    display: flex;
+    gap: 30px;
+}
+         
         .benefits-list-item-tittle {
                     font-weight: 700;
                     font-size: 14px;
                     line-height: 1.14;
                     letter-spacing: 0.03em;
                     text-transform: uppercase;
+                    margin-bottom: 10px;
         }
 
                 .benefits-list-item-description {
@@ -149,15 +240,37 @@ font-family: var(--logo-font);
 
             /* Employees */
 
+            .about-section {
+            max-width: 1200px;
+            margin: 0 auto;
+                        }
+                                       
+       
+                 .flex-list {
+                 display: flex;
+                 flex-wrap: wrap;
+                 gap: 30px;
+           
+                }
+
             .employees-section {
             background-color: #F5F4FA;
+            padding: 94px 0;
                         }
+
+
+            .employees-card-content-wrapper {
+                padding-top: 30px;
+            }
+
 
 
             .about-employees-list-item {
                 background: var(--primary-text-color-theme-dark);
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
                 border-radius: 0px 0px 4px 4px;
+                text-align: center;
+                padding-bottom: 30px;
             }
             
 
@@ -167,6 +280,7 @@ font-family: var(--logo-font);
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-bottom: 50px;
             }
 
         .employee-name {
@@ -175,6 +289,7 @@ font-family: var(--logo-font);
             font-size: 16px;
             line-height: 1.19;
             letter-spacing: 0.03em;
+            margin-bottom: 9px;
         }
 
         .employee-position {
@@ -189,10 +304,17 @@ font-family: var(--logo-font);
         /* Footer */
  .footer-list {
      background-color: var(--background-color-dark);
+     padding: 60px 0;
  }
 
   .footer-logo {
     color: var(--primary-text-color-theme-dark);
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .footer-list-item {
+      margin-bottom: 9px;
   }
 
  .maps {
@@ -215,13 +337,20 @@ font-family: var(--logo-font);
 /* Portfolio second page */
 /* Buttons */
 
+.filter-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  
+}
+
+
 .filter-list-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    cursor: pointer;
     font-family: inherit;
     background-color: var(--another-grey-color);
     border-radius: 4px;
@@ -242,6 +371,7 @@ font-family: var(--logo-font);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 9px;
 }
  
 .portfolio-item-description {
@@ -251,3 +381,4 @@ font-family: var(--logo-font);
     line-height: 30px;
     letter-spacing: 0.03em;
 }
+
