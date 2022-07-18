@@ -94,11 +94,6 @@
 
     /* HEADER */
 
-.page-header {
-    margin-bottom: 80px;
-}
-
-
         .page-header-container {
             display: flex;
             align-items: center;
@@ -207,6 +202,10 @@ font-family: var(--logo-font);
         .main-button:focus {
         background-color: var(--hover-background-color);
     
+        }
+
+        .filter-button {
+            margin-top: 80px;
         }
 
         /* Benefits  */
