@@ -277,7 +277,7 @@ font-family: var(--logo-font);
                  display: flex;
                  flex-wrap: wrap;
                  gap: 27px;
-           
+                
                 }
 
             .employees-section {
@@ -287,8 +287,10 @@ font-family: var(--logo-font);
 
 
             .employees-card-content-wrapper {
-                padding-top: 30px;
-                padding-bottom: 30px;
+                padding-left: 24px;
+                padding-right: 24px;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
 
 
