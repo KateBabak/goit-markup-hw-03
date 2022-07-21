@@ -13,6 +13,7 @@
             --another-black-color: #2F303A;
             --transparent-white-color: rgba(255, 255, 255, 0.6);
             --hover-background-color: #188CE8;
+            --header-border-color:#ECECEC;
             
         }
     
@@ -50,7 +51,6 @@
             -moz-appearance: none;
             appearance: none;
             text-decoration: none;
-            overflow: visible;
         }
 
         
@@ -117,6 +117,7 @@
 
     .page-header {
         padding: 25px 0;
+        border: 1px solid var(--header-border-color);
     }
 
         .page-header-container {
@@ -172,12 +173,7 @@ font-family: var(--logo-font);
             letter-spacing: 0.02em;
             color: var(--primary-text-color-theme-light); 
         }
-
-        .contact-link {
-        color: var(--secondary-text-color-theme-light); 
-        margin-left: auto;
-      
-    }
+k
 
         .menu-link:hover,
         .menu-link:focus {
@@ -233,17 +229,9 @@ font-family: var(--logo-font);
     
         }
 
-        .filter-container {
-            margin-bottom: 50px;
-        }
-
         /* Benefits  */
 
-.benefits {
-    padding: 94px 0;
-    max-width:1200px; 
-    margin: 0 auto;
-}
+
 .benefits-list {
     display: flex;
     gap: 30px;
@@ -287,10 +275,9 @@ font-family: var(--logo-font);
 
 
             .employees-card-content-wrapper {
-                padding-left: 24px;
-                padding-right: 24px;
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                text-align: center;
             }
 
 
@@ -299,8 +286,6 @@ font-family: var(--logo-font);
                 background: var(--primary-text-color-theme-dark);
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
                 border-radius: 0px 0px 4px 4px;
-                text-align: center;
-                padding-bottom: 30px;
             }
             
 
@@ -343,7 +328,7 @@ font-family: var(--logo-font);
     display: block;
   }
 
-  .footer-list-item :not(:last-child) {
+  .footer-list-item:not(:last-child) {
       margin-bottom: 9px;
   }
 
@@ -371,6 +356,7 @@ font-family: var(--logo-font);
     display: flex;
     gap: 8px;
     justify-content: center;
+    margin-bottom: 50px;
   
 }
 
@@ -385,6 +371,7 @@ font-family: var(--logo-font);
     background-color: var(--another-grey-color);
     border-radius: 4px;
     color: var(--primary-text-color-theme-light);
+    padding: 6px 22px;
 }
 
 
@@ -399,6 +386,11 @@ font-family: var(--logo-font);
 .portfolio-item {
     background: var(--primary-text-color-theme-dark);
     border: 1px solid var(--light-grey-color);
+}
+
+.portfolio-item .employees-card-content-wrapper {
+    text-align: left;
+    padding: 20px 24px;
 }
 
 .portfolio-item-title {
